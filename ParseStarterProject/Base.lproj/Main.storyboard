@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mm6-0q-WLm">
+                                <rect key="frame" x="142" y="418" width="30" height="30"/>
+                                <state key="normal" title="登録">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="UserNameButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="HgJ-EW-vKF"/>
+                                    <segue destination="b3C-h5-4oN" kind="presentation" id="Vrt-Xr-uZN"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Zg-4T-q6j">
+                                <rect key="frame" x="60" y="172" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="UserName" destination="7Zg-4T-q6j" id="ivh-9d-9O6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-123" y="-67"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="59c-jb-Sxp">
+            <objects>
+                <viewController id="b3C-h5-4oN" customClass="ViewController2" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oCb-pd-Rgz"/>
+                        <viewControllerLayoutGuide type="bottom" id="M4O-fX-u6J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dPz-x3-ucd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="理科大マップ.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="zWX-Mw-NpG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znQ-7Y-kY8">
+                                <rect key="frame" x="102" y="241" width="19" height="23"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="MFV-pi-QfP" kind="presentation" id="X8q-2x-PQw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uqc-tG-OQy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="-62"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="2GE-4F-8J8">
+            <objects>
+                <viewController id="MFV-pi-QfP" customClass="ViewController3" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LbB-ht-EG3"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ez-di-TI3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jg0-Xg-cJz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="壁紙04.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="k5o-nk-iUF">
+                                <rect key="frame" x="-5" y="0.0" width="325" height="580"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0z3-aq-5jd">
+                                <rect key="frame" x="112" y="212" width="130" height="65"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="upObjectButtonA3" destination="MFV-pi-QfP" eventType="touchUpInside" id="g8c-u7-9Sq"/>
+                                    <segue destination="zdM-lX-tDz" kind="presentation" id="k37-fc-pmr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="799-kM-I0U">
+                                <rect key="frame" x="111" y="292" width="130" height="60"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="upObjectButtonA2" destination="MFV-pi-QfP" eventType="touchUpInside" id="rUh-TP-ocG"/>
+                                    <segue destination="zdM-lX-tDz" kind="presentation" id="eaO-RX-dbX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHc-9N-Kni">
+                                <rect key="frame" x="112" y="358" width="130" height="47"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="upObjectButtonA1" destination="MFV-pi-QfP" eventType="touchUpInside" id="ioZ-YL-nS7"/>
+                                    <segue destination="zdM-lX-tDz" kind="presentation" id="AAw-Cf-ZrM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dr6-Rj-zXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669" y="-62"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="zct-aY-48d">
+            <objects>
+                <viewController id="zdM-lX-tDz" customClass="ViewController4" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4fD-3V-p9J"/>
+                        <viewControllerLayoutGuide type="bottom" id="pul-Gg-MfF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lct-m1-Bfa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3g-g7-AOn">
+                                <rect key="frame" x="102" y="127" width="116" height="77"/>
+                                <color key="backgroundColor" red="0.31466102769999998" green="0.84235721600000002" blue="0.88461929559999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Transmit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="b3C-h5-4oN" kind="presentation" id="Qea-k8-6NU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRs-DG-qoR">
+                                <rect key="frame" x="102" y="351" width="116" height="77"/>
+                                <color key="backgroundColor" red="0.31466102769999998" green="0.84235721600000002" blue="0.88461929559999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Serch">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mj8-DO-EU9" kind="presentation" id="GP5-j4-i4b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="djh-yG-sjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1098" y="-67"/>
+        </scene>
+        <!--View Controller5-->
+        <scene sceneID="MLU-vN-vcv">
+            <objects>
+                <viewController id="mj8-DO-EU9" customClass="ViewController5" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kKD-54-Co9"/>
+                        <viewControllerLayoutGuide type="bottom" id="WKK-AG-yAN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yCF-ur-cvz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="友達を探す" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pPZ-cV-sox">
+                                <rect key="frame" x="62" y="195" width="147" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIP-H7-mXx">
+                                <rect key="frame" x="148" y="266" width="53" height="35"/>
+                                <color key="backgroundColor" red="0.31466102769999998" green="0.84235721600000002" blue="0.88461929559999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="完了">
+                                    <color key="titleColor" red="0.2117647231" green="0.20392158630000001" blue="0.050980396570000003" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="壁紙01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sgk-y1-rpi">
+                                <rect key="frame" x="-8" y="-3" width="328" height="573"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="44F-iM-Oek" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1550" y="-67"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="壁紙01.jpg" width="658" height="1154"/>
+        <image name="壁紙04.jpg" width="658" height="1154"/>
+        <image name="理科大マップ.jpg" width="658" height="1154"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Qea-k8-6NU"/>
+        <segue reference="k37-fc-pmr"/>
+    </inferredMetricsTieBreakers>
+</document>
