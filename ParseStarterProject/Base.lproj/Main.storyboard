@@ -17,9 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="壁紙01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KT7-Ft-sti">
+                                <rect key="frame" x="-6" y="-6" width="326" height="574"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Zg-4T-q6j">
+                                <rect key="frame" x="60" y="172" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mm6-0q-WLm">
-                                <rect key="frame" x="142" y="418" width="30" height="30"/>
+                                <rect key="frame" x="128" y="279" width="64" height="38"/>
+                                <color key="backgroundColor" red="0.31466102769999998" green="0.84235721600000002" blue="0.88461929559999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="登録">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -27,11 +37,6 @@
                                     <segue destination="b3C-h5-4oN" kind="presentation" id="Vrt-Xr-uZN"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Zg-4T-q6j">
-                                <rect key="frame" x="60" y="172" width="200" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -143,26 +148,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3g-g7-AOn">
-                                <rect key="frame" x="102" y="127" width="116" height="77"/>
-                                <color key="backgroundColor" red="0.31466102769999998" green="0.84235721600000002" blue="0.88461929559999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Transmit">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="b3C-h5-4oN" kind="presentation" id="Qea-k8-6NU"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="壁紙01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="n3g-v1-lhc">
+                                <rect key="frame" x="-5" y="-9" width="325" height="612"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRs-DG-qoR">
-                                <rect key="frame" x="102" y="351" width="116" height="77"/>
+                                <rect key="frame" x="110" y="287" width="100" height="53"/>
                                 <color key="backgroundColor" red="0.31466102769999998" green="0.84235721600000002" blue="0.88461929559999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Serch">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="mj8-DO-EU9" kind="presentation" id="GP5-j4-i4b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3g-g7-AOn">
+                                <rect key="frame" x="108" y="148" width="98" height="53"/>
+                                <color key="backgroundColor" red="0.31466102769999998" green="0.84235721600000002" blue="0.88461929559999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Transmit">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="b3C-h5-4oN" kind="presentation" id="Qea-k8-6NU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -186,6 +194,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="壁紙01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sgk-y1-rpi">
+                                <rect key="frame" x="-8" y="-3" width="328" height="573"/>
+                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="友達を探す" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pPZ-cV-sox">
                                 <rect key="frame" x="62" y="195" width="147" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -198,18 +209,29 @@
                                     <color key="titleColor" red="0.2117647231" green="0.20392158630000001" blue="0.050980396570000003" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="dlObjectButton" destination="mj8-DO-EU9" eventType="touchUpInside" id="Wn8-ur-8Zv"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="壁紙01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sgk-y1-rpi">
-                                <rect key="frame" x="-8" y="-3" width="328" height="573"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mu-Vt-Rtb">
+                                <rect key="frame" x="45" y="487" width="213" height="47"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="FriendName" destination="pPZ-cV-sox" id="RNb-X0-Jdi"/>
+                        <outlet property="label" destination="5mu-Vt-Rtb" id="DRC-hF-lzc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44F-iM-Oek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1550" y="-67"/>
+            <point key="canvasLocation" x="1561" y="-67"/>
         </scene>
     </scenes>
     <resources>

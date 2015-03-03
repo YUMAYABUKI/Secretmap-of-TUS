@@ -43,9 +43,11 @@ class ViewController3: UIViewController {
     
     
     @IBAction func upObjectButtonA2(){
-        var query = PFQuery(className:"hoge")
+        
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
         var object01 = appDelegate.objectId01
+
+        var query = PFQuery(className:"hoge")
         query.getObjectInBackgroundWithId(object01) {
             (hoge: PFObject!, error: NSError!) -> Void in
             if error != nil {

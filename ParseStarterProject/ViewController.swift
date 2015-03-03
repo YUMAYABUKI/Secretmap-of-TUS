@@ -22,17 +22,23 @@ class ViewController: UIViewController {
         hoge.saveInBackgroundWithBlock {
             (success: Bool, error: NSError!) -> Void in
             if (success) {
+                let objectId01 = hoge.objectId
                 println("Save to username")
+                println(objectId01)
+                var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
+                appDelegate.objectId01 = hoge.objectId//appDelegateの変数を操作
+
+
             } else {
                 // There was a problem, check error.description
             }
         }
         
-        let objectId01 = hoge.objectId
+        
         
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
-        appDelegate.objectId01 = hoge.objectId //appDelegateの変数を操作
-    }
+        appDelegate.objectId01 = hoge.objectId//appDelegateの変数を操作
+            }
     
     
     
