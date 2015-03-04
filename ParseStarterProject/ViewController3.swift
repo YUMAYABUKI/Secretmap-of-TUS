@@ -19,6 +19,7 @@ class ViewController3: UIViewController {
         
     }
     
+// MARK:ボタンを押すとA棟１階にいるとアップロード
     @IBAction func upObjectButtonA1(){
         var query = PFQuery(className:"hoge")
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
@@ -42,7 +43,7 @@ class ViewController3: UIViewController {
         }
     }
     
-    
+// MARK:ボタンを押すとA棟２階にいるとアップロード
     @IBAction func upObjectButtonA2(){
         
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
@@ -67,7 +68,7 @@ class ViewController3: UIViewController {
         }
     }
     
-    
+// MARK:ボタンを押すとA棟３階にいるとアップロード
     @IBAction func upObjectButtonA3(){
         var query = PFQuery(className:"hoge")
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得

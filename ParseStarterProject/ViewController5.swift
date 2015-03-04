@@ -15,13 +15,14 @@ class ViewController5: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-    }
+        }
+    
+    
+// MARK:ボタンを押すと友達の位置情報をLabelに表示
     @IBAction func dlObjectButton(){
         var query = PFQuery(className:"hoge")
         query.whereKey("username", equalTo:FriendName.text)
-        //hogeというクラスの中のusernameでFriendName.textが同じObjectを取り出す
+        //hogeクラスの中のusernameがFriendName.textと同じObjectを取り出す
         query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if error == nil {

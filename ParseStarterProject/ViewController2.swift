@@ -10,7 +10,7 @@ import UIKit
 import Parse
 
 class ViewController2: UIViewController {
-    
+// MARK:ボタンを押すと図書館にいるとアップロード
     @IBAction func upObjectButtonLibrary(){
         var query = PFQuery(className:"hoge")
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
@@ -34,7 +34,7 @@ class ViewController2: UIViewController {
             }
         }
     }
-
+// MARK:ボタンを押すとバス停にいるとアップロード
     @IBAction func upObjectButtonBus(){
         var query = PFQuery(className:"hoge")
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
@@ -56,7 +56,7 @@ class ViewController2: UIViewController {
             }
         }
     }
-    
+// MARK:ボタンを押すと特別棟にいるとアップロード
     @IBAction func upObjectButtonSpecial(){
         var query = PFQuery(className:"hoge")
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
@@ -78,7 +78,7 @@ class ViewController2: UIViewController {
             }
         }
     }
-    
+// MARK:ボタンを押すと学食にいるとアップロード
     @IBAction func upObjectButtonCafeteria(){
         var query = PFQuery(className:"hoge")
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
@@ -100,7 +100,7 @@ class ViewController2: UIViewController {
             }
         }
     }
-    
+// MARK:ボタンを押すと休みとアップロード
     @IBAction func upObjectButtonAbsent(){
         var query = PFQuery(className:"hoge")
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
@@ -122,7 +122,7 @@ class ViewController2: UIViewController {
             }
         }
     }
-    
+// MARK:ボタンを押すと体育館にいるとアップロード
     @IBAction func upObjectButtonGym(){
         var query = PFQuery(className:"hoge")
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
