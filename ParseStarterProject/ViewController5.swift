@@ -22,7 +22,7 @@ class ViewController5: UIViewController {
     
     
     
-// MARK:ボタンを押すと友達の位置情報をLabelに表示
+// MARK:ボタンを押すと友達の位置情報(buildingとmyarea)をLabelに表示
     @IBAction func dlObjectButton(){
         var query = PFQuery(className:"hoge")
         query.whereKey("username", equalTo:FriendName.text)

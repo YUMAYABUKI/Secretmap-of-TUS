@@ -11,6 +11,7 @@ import Parse
 
 class ViewController2: UIViewController {
     
+// MARK:ボタンを押すと何棟にいるかアップロード
     @IBAction func chooseA(){
         var whichbuilding = "A棟"
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
