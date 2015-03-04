@@ -28,9 +28,6 @@
 		C0979B3D1AA02D4E00C44BA5 /* 壁紙04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0979B3C1AA02D4E00C44BA5 /* 壁紙04.jpg */; };
 		C0979B3F1AA0357000C44BA5 /* 壁紙01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0979B3E1AA0357000C44BA5 /* 壁紙01.jpg */; };
 		C09CD88E1A9FBB3500972110 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09CD88D1A9FBB3500972110 /* ViewController2.swift */; };
-		C0EDF8F31AA5F3D8000E6E58 /* ViewControllerB.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EDF8F21AA5F3D8000E6E58 /* ViewControllerB.swift */; };
-		C0EDF8F51AA5F42F000E6E58 /* ViewControllerC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EDF8F41AA5F42F000E6E58 /* ViewControllerC.swift */; };
-		C0EDF8F71AA5F475000E6E58 /* ViewControllerD.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0EDF8F61AA5F475000E6E58 /* ViewControllerD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,9 +55,6 @@
 		C0979B3C1AA02D4E00C44BA5 /* 壁紙04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "壁紙04.jpg"; path = "../../秘密の地図素材/壁紙04.jpg"; sourceTree = "<group>"; };
 		C0979B3E1AA0357000C44BA5 /* 壁紙01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "壁紙01.jpg"; path = "../../秘密の地図素材/壁紙01.jpg"; sourceTree = "<group>"; };
 		C09CD88D1A9FBB3500972110 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
-		C0EDF8F21AA5F3D8000E6E58 /* ViewControllerB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerB.swift; sourceTree = "<group>"; };
-		C0EDF8F41AA5F42F000E6E58 /* ViewControllerC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerC.swift; sourceTree = "<group>"; };
-		C0EDF8F61AA5F475000E6E58 /* ViewControllerD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +105,6 @@
 				C0979B361AA02CA800C44BA5 /* ViewController4.swift */,
 				C0979B381AA02CFE00C44BA5 /* ViewController5.swift */,
 				81BA814E1A49DA1800E65899 /* Main.storyboard */,
-				C0EDF8F21AA5F3D8000E6E58 /* ViewControllerB.swift */,
-				C0EDF8F41AA5F42F000E6E58 /* ViewControllerC.swift */,
-				C0EDF8F61AA5F475000E6E58 /* ViewControllerD.swift */,
 				81BA81511A49DA1800E65899 /* Images.xcassets */,
 				81BA81481A49DA1800E65899 /* Supporting Files */,
 			);
@@ -248,9 +239,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
-				C0EDF8F31AA5F3D8000E6E58 /* ViewControllerB.swift in Sources */,
-				C0EDF8F71AA5F475000E6E58 /* ViewControllerD.swift in Sources */,
-				C0EDF8F51AA5F42F000E6E58 /* ViewControllerC.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				C0979B351A9FF23E00C44BA5 /* ViewController3.swift in Sources */,
 				C09CD88E1A9FBB3500972110 /* ViewController2.swift in Sources */,

@@ -27,7 +27,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mm6-0q-WLm">
                                 <rect key="frame" x="128" y="279" width="64" height="38"/>
-                                <color key="backgroundColor" red="0.31466102769999998" green="0.84235721600000002" blue="0.88461929559999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="登録">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -76,6 +76,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="chooseA" destination="b3C-h5-4oN" eventType="touchUpInside" id="O2i-8r-uMh"/>
                                     <segue destination="MFV-pi-QfP" kind="presentation" id="X8q-2x-PQw"/>
                                 </connections>
                             </button>
@@ -85,7 +86,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dio-v5-RJK" kind="presentation" id="EQo-GW-625"/>
+                                    <action selector="chooseB" destination="b3C-h5-4oN" eventType="touchUpInside" id="Rab-Fn-qg2"/>
+                                    <segue destination="MFV-pi-QfP" kind="presentation" id="g8m-yi-2jw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rt-6V-D3j">
@@ -94,7 +96,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Yr1-SW-MHE" kind="presentation" id="rlf-9E-DOw"/>
+                                    <action selector="chooseC" destination="b3C-h5-4oN" eventType="touchUpInside" id="wSv-ty-0l6"/>
+                                    <segue destination="MFV-pi-QfP" kind="presentation" id="UVu-cy-GLd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKE-pC-HmG">
@@ -103,7 +106,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8Lc-nR-oow" kind="presentation" id="QPH-xW-5OE"/>
+                                    <action selector="chooseD" destination="b3C-h5-4oN" eventType="touchUpInside" id="bdz-nA-Iqw"/>
+                                    <segue destination="MFV-pi-QfP" kind="presentation" id="kwX-jM-Qmd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFI-cU-Yvm">
@@ -175,234 +179,6 @@
             </objects>
             <point key="canvasLocation" x="258" y="-62"/>
         </scene>
-        <!--View ControllerB-->
-        <scene sceneID="DB6-J0-Lvm">
-            <objects>
-                <viewController id="dio-v5-RJK" customClass="ViewControllerB" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lqR-Hz-BZw"/>
-                        <viewControllerLayoutGuide type="bottom" id="AQZ-ko-cPD"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="D4r-Vt-tro">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="壁紙04.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="elB-tS-HYP">
-                                <rect key="frame" x="-9" y="-8" width="329" height="584"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3a0-SO-gNG">
-                                <rect key="frame" x="106" y="209" width="128" height="70"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="upObjectButtonB3" destination="dio-v5-RJK" eventType="touchUpInside" id="xsw-0f-n8N"/>
-                                    <segue destination="zdM-lX-tDz" kind="presentation" id="0RY-Js-GUQ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBj-ky-ldH">
-                                <rect key="frame" x="106" y="280" width="128" height="57"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="upObjectButtonB2" destination="dio-v5-RJK" eventType="touchUpInside" id="iIg-eO-bgM"/>
-                                    <segue destination="zdM-lX-tDz" kind="presentation" id="erj-vG-MXo"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where are you now?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCF-g5-oPI">
-                                <rect key="frame" x="16" y="92" width="158" height="21"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeF-ZW-Z1x">
-                                <rect key="frame" x="248" y="88" width="42" height="30"/>
-                                <state key="normal" title="BACK">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="b3C-h5-4oN" kind="presentation" id="JSA-ir-mbU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nI2-dA-keh">
-                                <rect key="frame" x="106" y="341" width="128" height="57"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="upObjectButtonB1" destination="dio-v5-RJK" eventType="touchUpInside" id="ytq-rt-SMM"/>
-                                    <segue destination="zdM-lX-tDz" kind="presentation" id="qpG-Md-I4q"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="B棟" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="439-ZT-DQP">
-                                <rect key="frame" x="55" y="170" width="29" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M4M-ut-pdH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-40" y="602"/>
-        </scene>
-        <!--View ControllerC-->
-        <scene sceneID="HO2-qh-bPF">
-            <objects>
-                <viewController id="Yr1-SW-MHE" customClass="ViewControllerC" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nAh-kF-fmO"/>
-                        <viewControllerLayoutGuide type="bottom" id="iMq-Uj-Ysh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Y8w-k7-2Ms">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="壁紙04.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="2Bs-SJ-lL5">
-                                <rect key="frame" x="-6" y="-8" width="334" height="589"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIV-bJ-grX">
-                                <rect key="frame" x="112" y="342" width="128" height="57"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="upObjectButtonC1" destination="Yr1-SW-MHE" eventType="touchUpInside" id="Ajy-5b-9e4"/>
-                                    <segue destination="zdM-lX-tDz" kind="presentation" id="9zJ-Xx-f5K"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOs-AW-zKq">
-                                <rect key="frame" x="237" y="92" width="42" height="30"/>
-                                <state key="normal" title="BACK">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="b3C-h5-4oN" kind="presentation" id="bAE-dV-8KM"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where are you now?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLt-ks-21j">
-                                <rect key="frame" x="16" y="96" width="158" height="21"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzU-Jl-2ef">
-                                <rect key="frame" x="106" y="284" width="128" height="57"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="upObjectButtonC2" destination="Yr1-SW-MHE" eventType="touchUpInside" id="dY7-2f-DRB"/>
-                                    <segue destination="zdM-lX-tDz" kind="presentation" id="suc-FY-f6V"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEx-PJ-i8N">
-                                <rect key="frame" x="106" y="205" width="128" height="71"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="upObjectButtonC3" destination="Yr1-SW-MHE" eventType="touchUpInside" id="LDE-AV-KDH"/>
-                                    <segue destination="zdM-lX-tDz" kind="presentation" id="xgY-mC-RAC"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C棟" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gU7-D2-kET">
-                                <rect key="frame" x="53" y="178" width="30" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ca-lQ-CeE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="335" y="602"/>
-        </scene>
-        <!--View ControllerD-->
-        <scene sceneID="6Yb-Ny-dU8">
-            <objects>
-                <viewController id="8Lc-nR-oow" customClass="ViewControllerD" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="oMt-7m-F0f"/>
-                        <viewControllerLayoutGuide type="bottom" id="0fO-pv-cXe"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1xf-DG-gJv">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="壁紙04.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Pip-Qn-2xf">
-                                <rect key="frame" x="-6" y="-8" width="326" height="585"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uu-fg-6GY">
-                                <rect key="frame" x="103" y="215" width="128" height="57"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="upObjectButtonD3" destination="8Lc-nR-oow" eventType="touchUpInside" id="jX6-rB-wZd"/>
-                                    <segue destination="zdM-lX-tDz" kind="presentation" id="0gz-xx-tTu"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where are you now?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOx-L3-L30">
-                                <rect key="frame" x="16" y="96" width="158" height="21"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYJ-dl-AwX">
-                                <rect key="frame" x="254" y="95" width="42" height="30"/>
-                                <state key="normal" title="BACK">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="b3C-h5-4oN" kind="presentation" id="gX3-0x-eza"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qL-JW-8qS">
-                                <rect key="frame" x="103" y="344" width="128" height="57"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="upObjectButtonD1" destination="8Lc-nR-oow" eventType="touchUpInside" id="fCF-jS-Fbb"/>
-                                    <segue destination="zdM-lX-tDz" kind="presentation" id="Jez-vA-RIt"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hu4-sc-BZC">
-                                <rect key="frame" x="105" y="279" width="128" height="57"/>
-                                <state key="normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="upObjectButtonD2" destination="8Lc-nR-oow" eventType="touchUpInside" id="oFh-p3-aBi"/>
-                                    <segue destination="zdM-lX-tDz" kind="presentation" id="gt9-tC-NtG"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="D棟" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMz-yv-s1N">
-                                <rect key="frame" x="56" y="182" width="30" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RIe-jB-kc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="708" y="602"/>
-        </scene>
         <!--View Controller3-->
         <scene sceneID="2GE-4F-8J8">
             <objects>
@@ -464,8 +240,8 @@
                                     <segue destination="b3C-h5-4oN" kind="presentation" id="aov-8i-Tmp"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A棟" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZL6-1S-fYe">
-                                <rect key="frame" x="62" y="185" width="29" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1eb-0o-bC6">
+                                <rect key="frame" x="58" y="166" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -474,6 +250,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="labelbuilding" destination="1eb-0o-bC6" id="MA8-kY-uTP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dr6-Rj-zXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -502,7 +281,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRs-DG-qoR">
                                 <rect key="frame" x="110" y="287" width="100" height="53"/>
-                                <color key="backgroundColor" red="0.31466102769999998" green="0.84235721600000002" blue="0.88461929559999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Search">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -513,7 +292,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3g-g7-AOn">
                                 <rect key="frame" x="108" y="148" width="98" height="53"/>
-                                <color key="backgroundColor" red="0.31466102769999998" green="0.84235721600000002" blue="0.88461929559999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <state key="normal" title="Transmit">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -556,6 +335,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="壁紙01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sgk-y1-rpi">
                                 <rect key="frame" x="-8" y="-3" width="328" height="573"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZz-yg-XSr">
+                                <rect key="frame" x="34" y="486" width="65" height="47"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="友達を探す" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pPZ-cV-sox">
                                 <rect key="frame" x="62" y="195" width="147" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -572,23 +358,23 @@
                                     <action selector="dlObjectButton" destination="mj8-DO-EU9" eventType="touchUpInside" id="Wn8-ur-8Zv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mu-Vt-Rtb">
-                                <rect key="frame" x="45" y="487" width="213" height="47"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHL-Y6-7Yc">
+                                <rect key="frame" x="245" y="109" width="49" height="30"/>
+                                <state key="normal" title="FINISH">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="gLS-Tu-Ytp"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mu-Vt-Rtb">
+                                <rect key="frame" x="99" y="486" width="188" height="47"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHL-Y6-7Yc">
-                                <rect key="frame" x="245" y="109" width="42" height="30"/>
-                                <state key="normal" title="BACK">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="zdM-lX-tDz" kind="presentation" id="hYo-XK-Egh"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -596,11 +382,12 @@
                     <connections>
                         <outlet property="FriendName" destination="pPZ-cV-sox" id="RNb-X0-Jdi"/>
                         <outlet property="label" destination="5mu-Vt-Rtb" id="DRC-hF-lzc"/>
+                        <outlet property="label2" destination="tZz-yg-XSr" id="kFw-u4-fhW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44F-iM-Oek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1561" y="-67"/>
+            <point key="canvasLocation" x="1643" y="-62"/>
         </scene>
     </scenes>
     <resources>
@@ -609,7 +396,8 @@
         <image name="理科大マップ.jpg" width="658" height="1154"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aov-8i-Tmp"/>
         <segue reference="sv1-Jw-k3K"/>
+        <segue reference="VZ2-9g-Uz5"/>
+        <segue reference="kwX-jM-Qmd"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -18,6 +18,7 @@ import Parse
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var objectId01:String?
+    var building:String?
     var window: UIWindow?
 
     //--------------------------------------

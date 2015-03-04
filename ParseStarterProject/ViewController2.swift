@@ -10,6 +10,117 @@ import UIKit
 import Parse
 
 class ViewController2: UIViewController {
+    
+    @IBAction func chooseA(){
+        var whichbuilding = "A棟"
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
+        appDelegate.building = whichbuilding//appDelegateの変数を操作
+        
+        var query = PFQuery(className:"hoge")
+        var object01 = appDelegate.objectId01
+        query.getObjectInBackgroundWithId(object01) {
+            (hoge: PFObject!, error: NSError!) -> Void in
+            if error != nil {
+                NSLog("%@", error)
+            } else {
+                hoge["building"] = whichbuilding
+                hoge.saveInBackgroundWithBlock {
+                    (success: Bool, error: NSError!) -> Void in
+                    if (success) {
+                        println("Save to area")
+                    } else {
+                        // There was a problem, check error.description
+                    }
+                }
+            }
+        }
+
+    }
+    
+    
+    @IBAction func chooseB(){
+        var whichbuilding = "B棟"
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
+        appDelegate.building = whichbuilding//appDelegateの変数を操作
+        
+        var query = PFQuery(className:"hoge")
+        var object01 = appDelegate.objectId01
+        query.getObjectInBackgroundWithId(object01) {
+            (hoge: PFObject!, error: NSError!) -> Void in
+            if error != nil {
+                NSLog("%@", error)
+            } else {
+                hoge["building"] = whichbuilding
+                hoge.saveInBackgroundWithBlock {
+                    (success: Bool, error: NSError!) -> Void in
+                    if (success) {
+                        println("Save to area")
+                    } else {
+                        // There was a problem, check error.description
+                    }
+                }
+            }
+        }
+        
+    }
+    
+    @IBAction func chooseC(){
+        var whichbuilding = "C棟"
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
+        appDelegate.building = whichbuilding//appDelegateの変数を操作
+        
+        var query = PFQuery(className:"hoge")
+        var object01 = appDelegate.objectId01
+        query.getObjectInBackgroundWithId(object01) {
+            (hoge: PFObject!, error: NSError!) -> Void in
+            if error != nil {
+                NSLog("%@", error)
+            } else {
+                hoge["building"] = whichbuilding
+                hoge.saveInBackgroundWithBlock {
+                    (success: Bool, error: NSError!) -> Void in
+                    if (success) {
+                        println("Save to area")
+                    } else {
+                        // There was a problem, check error.description
+                    }
+                }
+            }
+        }
+        
+        
+        
+    }
+    
+    @IBAction func chooseD(){
+        var whichbuilding = "D棟"
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
+        appDelegate.building = whichbuilding//appDelegateの変数を操作
+        
+        var query = PFQuery(className:"hoge")
+        var object01 = appDelegate.objectId01
+        query.getObjectInBackgroundWithId(object01) {
+            (hoge: PFObject!, error: NSError!) -> Void in
+            if error != nil {
+                NSLog("%@", error)
+            } else {
+                hoge["building"] = whichbuilding
+                hoge.saveInBackgroundWithBlock {
+                    (success: Bool, error: NSError!) -> Void in
+                    if (success) {
+                        println("Save to area")
+                    } else {
+                        // There was a problem, check error.description
+                    }
+                }
+            }
+        }
+        
+        
+        
+    }
+    
+    
 // MARK:ボタンを押すと図書館にいるとアップロード
     @IBAction func upObjectButtonLibrary(){
         var query = PFQuery(className:"hoge")

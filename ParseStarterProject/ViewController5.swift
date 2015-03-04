@@ -11,11 +11,15 @@ class ViewController5: UIViewController {
     
     @IBOutlet var FriendName: UITextField!
     @IBOutlet var label : UILabel!
+    @IBOutlet var label2 : UILabel!
+
+    
     
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+                super.viewDidLoad()
         }
+    
     
     
 // MARK:ボタンを押すと友達の位置情報をLabelに表示
@@ -31,7 +35,9 @@ class ViewController5: UIViewController {
                 // Do something with the found objects
                 for object in objects {
                     NSLog("%@", object.objectId)
+
                     self.label.text = object["myarea"] as String!
+                    self.label2.text = object["building"] as String!
                 }
             } else {
                 // Log details of the failure

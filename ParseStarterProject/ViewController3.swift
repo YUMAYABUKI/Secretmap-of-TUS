@@ -11,13 +11,19 @@ import Parse
 
 class ViewController3: UIViewController {
     
-    
+     @IBOutlet var labelbuilding:UILabel!
     
     override func viewDidLoad() {
+        
+       
+        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
+        var whichbuilding2 = appDelegate.building
+        self.labelbuilding.text = whichbuilding2
+        
         super.viewDidLoad()
-        
-        
     }
+    
+    
     
 // MARK:ボタンを押すとA棟１階にいるとアップロード
     @IBAction func upObjectButtonA1(){
@@ -29,8 +35,8 @@ class ViewController3: UIViewController {
             if error != nil {
                 NSLog("%@", error)
             } else {
-                hoge["myarea"] = "A棟１階にいます"
-                //hogeというクラスの中のmyareaに位置情報を保存
+                hoge["myarea"] = "１階にいます"
+                //hogeクラスの中のmyareaに位置情報を保存
                 hoge.saveInBackgroundWithBlock {
                     (success: Bool, error: NSError!) -> Void in
                      if (success) {
@@ -55,7 +61,7 @@ class ViewController3: UIViewController {
             if error != nil {
                 NSLog("%@", error)
             } else {
-                hoge["myarea"] = "A棟２階にいます"
+                hoge["myarea"] = "２階にいます"
                 hoge.saveInBackgroundWithBlock {
                     (success: Bool, error: NSError!) -> Void in
                     if (success) {
@@ -78,7 +84,7 @@ class ViewController3: UIViewController {
             if error != nil {
                 NSLog("%@", error)
             } else {
-                hoge["myarea"] = "A棟３階にいます"
+                hoge["myarea"] = "３階にいます"
                 hoge.saveInBackgroundWithBlock {
                     (success: Bool, error: NSError!) -> Void in
                     if (success) {
