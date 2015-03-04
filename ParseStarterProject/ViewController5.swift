@@ -21,6 +21,7 @@ class ViewController5: UIViewController {
     @IBAction func dlObjectButton(){
         var query = PFQuery(className:"hoge")
         query.whereKey("username", equalTo:FriendName.text)
+        //hogeというクラスの中のusernameでFriendName.textが同じObjectを取り出す
         query.findObjectsInBackgroundWithBlock {
             (objects: [AnyObject]!, error: NSError!) -> Void in
             if error == nil {

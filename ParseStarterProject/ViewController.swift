@@ -17,17 +17,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func UserNameButton(){
-        var hoge = PFObject(className:"hoge")
+        var hoge = PFObject(className:"hoge") //クラスをhogeに指定
         hoge["username"] = UserName.text
+        //UserName.textをhogeクラスの中のusernameに入れる
         hoge.saveInBackgroundWithBlock {
             (success: Bool, error: NSError!) -> Void in
             if (success) {
-                let objectId01 = hoge.objectId
                 println("Save to username")
-                println(objectId01)
                 var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
                 appDelegate.objectId01 = hoge.objectId//appDelegateの変数を操作
-
+                
+                
 
             } else {
                 // There was a problem, check error.description
@@ -36,9 +36,7 @@ class ViewController: UIViewController {
         
         
         
-        var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
-        appDelegate.objectId01 = hoge.objectId//appDelegateの変数を操作
-            }
+                   }
     
     
     

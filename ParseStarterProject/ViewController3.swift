@@ -29,9 +29,10 @@ class ViewController3: UIViewController {
                 NSLog("%@", error)
             } else {
                 hoge["myarea"] = "A棟１階にいます"
+                //hogeというクラスの中のmyareaに位置情報を保存
                 hoge.saveInBackgroundWithBlock {
                     (success: Bool, error: NSError!) -> Void in
-                    if (success) {
+                     if (success) {
                         println("Save to area")
                     } else {
                         // There was a problem, check error.description

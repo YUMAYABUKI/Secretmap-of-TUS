@@ -16,11 +16,13 @@ class ViewController2: UIViewController {
         var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
         var object01 = appDelegate.objectId01
         query.getObjectInBackgroundWithId(object01) {
+            //ObjectIdがObject01のObjectを取り出す
             (hoge: PFObject!, error: NSError!) -> Void in
             if error != nil {
                 NSLog("%@", error)
             } else {
                 hoge["myarea"] = "図書館にいます"
+                //hogeというクラスの中のmyareaに位置情報を保存
                 hoge.saveInBackgroundWithBlock {
                     (success: Bool, error: NSError!) -> Void in
                     if (success) {

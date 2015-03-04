@@ -122,7 +122,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="upObjectButtonGym" destination="b3C-h5-4oN" eventType="touchDragInside" id="dGd-r2-RuC"/>
+                                    <action selector="upObjectButtonGym" destination="b3C-h5-4oN" eventType="touchUpInside" id="oWI-CO-xdZ"/>
                                     <segue destination="zdM-lX-tDz" kind="presentation" id="mYw-Oe-6Hu"/>
                                 </connections>
                             </button>
@@ -609,7 +609,7 @@
         <image name="理科大マップ.jpg" width="658" height="1154"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VZ2-9g-Uz5"/>
-        <segue reference="hYo-XK-Egh"/>
+        <segue reference="aov-8i-Tmp"/>
+        <segue reference="sv1-Jw-k3K"/>
     </inferredMetricsTieBreakers>
 </document>
