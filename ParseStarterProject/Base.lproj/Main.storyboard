@@ -1,10 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iSs-il-xP1">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
+        <!--Index View Controller-->
+        <scene sceneID="WI2-OU-irr">
+            <objects>
+                <viewController id="iSs-il-xP1" customClass="IndexViewController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="P4M-rV-1Vc"/>
+                        <viewControllerLayoutGuide type="bottom" id="rno-Il-X42"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dWJ-CH-s8f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="壁紙03.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kRb-18-WeX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JI2-FH-Wa7">
+                                <rect key="frame" x="97" y="240" width="111" height="63"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <state key="normal" title="呪文">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eIF-7x-Sfh" kind="presentation" id="E58-TT-qVT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaq-7N-kgV">
+                                <rect key="frame" x="80" y="346" width="161" height="57"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="d7D-0y-mpl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8IL-0S-jod" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-625" y="-67"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -48,6 +94,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-123" y="-67"/>
+        </scene>
+        <!--View Controller Curse-->
+        <scene sceneID="4Zv-Mg-fFy">
+            <objects>
+                <viewController id="eIF-7x-Sfh" customClass="ViewControllerCurse" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rqX-9V-qQS"/>
+                        <viewControllerLayoutGuide type="bottom" id="0HW-Y4-Gof"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tZW-2x-MBV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uCL-Uq-veH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-308" y="559"/>
         </scene>
         <!--View Controller2-->
         <scene sceneID="59c-jb-Sxp">
@@ -206,7 +271,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="upObjectButtonA3" destination="MFV-pi-QfP" eventType="touchUpInside" id="g8c-u7-9Sq"/>
+                                    <action selector="upObjectButton3" destination="MFV-pi-QfP" eventType="touchUpInside" id="2Lm-my-2Ij"/>
                                     <segue destination="zdM-lX-tDz" kind="presentation" id="k37-fc-pmr"/>
                                 </connections>
                             </button>
@@ -216,7 +281,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="upObjectButtonA2" destination="MFV-pi-QfP" eventType="touchUpInside" id="rUh-TP-ocG"/>
+                                    <action selector="upObjectButton2" destination="MFV-pi-QfP" eventType="touchUpInside" id="SDE-7H-bbd"/>
                                     <segue destination="zdM-lX-tDz" kind="presentation" id="eaO-RX-dbX"/>
                                 </connections>
                             </button>
@@ -226,7 +291,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="upObjectButtonA1" destination="MFV-pi-QfP" eventType="touchUpInside" id="ioZ-YL-nS7"/>
+                                    <action selector="upObjectButton1" destination="MFV-pi-QfP" eventType="touchUpInside" id="Qix-SW-OOD"/>
                                     <segue destination="zdM-lX-tDz" kind="presentation" id="AAw-Cf-ZrM"/>
                                 </connections>
                             </button>
@@ -333,7 +398,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="壁紙01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="sgk-y1-rpi">
-                                <rect key="frame" x="-8" y="-3" width="328" height="573"/>
+                                <rect key="frame" x="-4" y="0.0" width="328" height="573"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZz-yg-XSr">
                                 <rect key="frame" x="34" y="486" width="65" height="47"/>
@@ -392,12 +457,14 @@
     </scenes>
     <resources>
         <image name="壁紙01.jpg" width="658" height="1154"/>
+        <image name="壁紙03.jpg" width="658" height="1154"/>
         <image name="壁紙04.jpg" width="658" height="1154"/>
         <image name="理科大マップ.jpg" width="658" height="1154"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sv1-Jw-k3K"/>
-        <segue reference="VZ2-9g-Uz5"/>
+        <segue reference="aov-8i-Tmp"/>
         <segue reference="kwX-jM-Qmd"/>
+        <segue reference="k37-fc-pmr"/>
+        <segue reference="d7D-0y-mpl"/>
     </inferredMetricsTieBreakers>
 </document>

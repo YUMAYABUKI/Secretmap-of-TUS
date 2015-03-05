@@ -4,7 +4,9 @@
 //  Copyright 2011-present Parse Inc. All rights reserved.
 //
 
+//UI(ユーザーインターフェイス)一式をimportする
 import UIKit
+//Parseで使うPFObjectなど一式をimportする
 import Parse
 
 class ViewController: UIViewController {
@@ -32,8 +34,7 @@ class ViewController: UIViewController {
                 println("Save to username")
                 var appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate //AppDelegateのインスタンスを取得
                 appDelegate.objectId01 = hoge.objectId//appDelegateの変数を操作
-                
-                
+            
 
             } else {
                 // There was a problem, check error.description

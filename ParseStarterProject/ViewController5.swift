@@ -13,16 +13,13 @@ class ViewController5: UIViewController {
     @IBOutlet var label : UILabel!
     @IBOutlet var label2 : UILabel!
 
-    
-    
-
     override func viewDidLoad() {
                 super.viewDidLoad()
         }
     
     
     
-// MARK:ボタンを押すと友達の位置情報(buildingとmyarea)をLabelに表示
+// MARK:ボタンを押すと友達の位置情報(buildingとmyarea)をLabel1と2に表示
     @IBAction func dlObjectButton(){
         var query = PFQuery(className:"hoge")
         query.whereKey("username", equalTo:FriendName.text)
