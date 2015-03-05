@@ -22,7 +22,7 @@ class IndexViewController: UIViewController ,AVAudioPlayerDelegate{
     @IBAction func curses(){
         
     
-    let randInt = arc4random_uniform(3);
+    let randInt = arc4random_uniform(4);
     
     //再生する音源のURLを生成.
     let soundFilePath0 : NSString = NSBundle.mainBundle().pathForResource("expecto", ofType: "mp3")!
@@ -33,6 +33,9 @@ class IndexViewController: UIViewController ,AVAudioPlayerDelegate{
     
     let soundFilePath2 : NSString = NSBundle.mainBundle().pathForResource("Rediculouss", ofType: "mp3")!
     let fileURL2 : NSURL = NSURL(fileURLWithPath: soundFilePath2)!
+        
+    let soundFilePath3 : NSString = NSBundle.mainBundle().pathForResource("Rictusempra", ofType: "mp3")!
+    let fileURL3 : NSURL = NSURL(fileURLWithPath: soundFilePath3)!
     
     
     var fileURL :NSURL!
@@ -42,7 +45,10 @@ class IndexViewController: UIViewController ,AVAudioPlayerDelegate{
     fileURL = fileURL1
     } else if(randInt == 2){
     fileURL = fileURL2
-    } else{
+    } else if(randInt == 3){
+    fileURL = fileURL3
+    }
+    else{
     fileURL = fileURL0
         }
     

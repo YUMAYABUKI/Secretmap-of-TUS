@@ -30,6 +30,7 @@
 		C03B8BD51AA8432400E07CE1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03B8BD41AA8432400E07CE1 /* MapViewController.swift */; };
 		C0709AE51AA766C300811214 /* Lumos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0709AE41AA766C300811214 /* Lumos.mp3 */; };
 		C08966EB1AA8742900E03293 /* 壁紙Index.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C08966EA1AA8742900E03293 /* 壁紙Index.jpg */; };
+		C08966ED1AA878BD00E03293 /* Rictusempra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C08966EC1AA878BD00E03293 /* Rictusempra.mp3 */; };
 		C0979B351A9FF23E00C44BA5 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0979B341A9FF23E00C44BA5 /* ViewController3.swift */; };
 		C0979B371AA02CA800C44BA5 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0979B361AA02CA800C44BA5 /* ViewController4.swift */; };
 		C0979B391AA02CFE00C44BA5 /* ViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0979B381AA02CFE00C44BA5 /* ViewController5.swift */; };
@@ -66,6 +67,7 @@
 		C03B8BD41AA8432400E07CE1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		C0709AE41AA766C300811214 /* Lumos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Lumos.mp3; sourceTree = "<group>"; };
 		C08966EA1AA8742900E03293 /* 壁紙Index.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "壁紙Index.jpg"; sourceTree = "<group>"; };
+		C08966EC1AA878BD00E03293 /* Rictusempra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rictusempra.mp3; sourceTree = "<group>"; };
 		C0979B341A9FF23E00C44BA5 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		C0979B361AA02CA800C44BA5 /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 		C0979B381AA02CFE00C44BA5 /* ViewController5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController5.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				C0979B3A1AA02D4400C44BA5 /* 理科大マップ.jpg */,
 				C0979B3C1AA02D4E00C44BA5 /* 壁紙04.jpg */,
 				C03B8BA41AA831BA00E07CE1 /* expecto.mp3 */,
+				C08966EC1AA878BD00E03293 /* Rictusempra.mp3 */,
 				C03B8BA21AA82E8700E07CE1 /* Rediculouss.mp3 */,
 				C0709AE41AA766C300811214 /* Lumos.mp3 */,
 				C0979B3E1AA0357000C44BA5 /* 壁紙01.jpg */,
@@ -244,6 +247,7 @@
 				C0979B3F1AA0357000C44BA5 /* 壁紙01.jpg in Resources */,
 				C03B8BA31AA82E8700E07CE1 /* Rediculouss.mp3 in Resources */,
 				C0979B3B1AA02D4400C44BA5 /* 理科大マップ.jpg in Resources */,
+				C08966ED1AA878BD00E03293 /* Rictusempra.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
