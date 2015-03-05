@@ -34,7 +34,6 @@ class ViewControllerCurse: UIViewController ,AVAudioPlayerDelegate{
         let soundFilePath2 : NSString = NSBundle.mainBundle().pathForResource("rediculous", ofType: "mp3")!
         let fileURL2 : NSURL = NSURL(fileURLWithPath: soundFilePath2)!
         
-//        var fileURL : NSURL = NSURL()
         
         var fileURL :NSURL!
         

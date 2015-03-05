@@ -23,10 +23,10 @@
 		81BA81811A49E10C00E65899 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81801A49E10C00E65899 /* ParseUI.framework */; };
 		C01FAE7A1AA7837400EFB11D /* ViewControllerCurse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01FAE791AA7837400EFB11D /* ViewControllerCurse.swift */; };
 		C039AA091AA749200060F5F1 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C039AA081AA749200060F5F1 /* IndexViewController.swift */; };
-		C039AA0B1AA7498E0060F5F1 /* water.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C039AA0A1AA7498E0060F5F1 /* water.mp3 */; };
 		C039AA0D1AA74A4E0060F5F1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C039AA0C1AA74A4E0060F5F1 /* AVFoundation.framework */; };
 		C039AA111AA74BD20060F5F1 /* 壁紙03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C039AA101AA74BD20060F5F1 /* 壁紙03.jpg */; };
-		C0709AE31AA7659D00811214 /* rediculous.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0709AE21AA7659D00811214 /* rediculous.mp3 */; };
+		C03B8BA31AA82E8700E07CE1 /* Rediculouss.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C03B8BA21AA82E8700E07CE1 /* Rediculouss.mp3 */; };
+		C03B8BA51AA831BA00E07CE1 /* expecto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C03B8BA41AA831BA00E07CE1 /* expecto.mp3 */; };
 		C0709AE51AA766C300811214 /* Lumos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C0709AE41AA766C300811214 /* Lumos.mp3 */; };
 		C0979B351A9FF23E00C44BA5 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0979B341A9FF23E00C44BA5 /* ViewController3.swift */; };
 		C0979B371AA02CA800C44BA5 /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0979B361AA02CA800C44BA5 /* ViewController4.swift */; };
@@ -57,10 +57,10 @@
 		81BA81821A49E27F00E65899 /* ParseStarterProject-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ParseStarterProject-Bridging-Header.h"; sourceTree = "<group>"; };
 		C01FAE791AA7837400EFB11D /* ViewControllerCurse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerCurse.swift; path = ../ViewControllerCurse.swift; sourceTree = "<group>"; };
 		C039AA081AA749200060F5F1 /* IndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexViewController.swift; sourceTree = "<group>"; };
-		C039AA0A1AA7498E0060F5F1 /* water.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = water.mp3; path = "../../../Music/iTunes/iTunes Media/Music/Unknown Artist/Unknown Album/water.mp3"; sourceTree = "<group>"; };
 		C039AA0C1AA74A4E0060F5F1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C039AA101AA74BD20060F5F1 /* 壁紙03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "壁紙03.jpg"; sourceTree = "<group>"; };
-		C0709AE21AA7659D00811214 /* rediculous.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rediculous.mp3; sourceTree = "<group>"; };
+		C03B8BA21AA82E8700E07CE1 /* Rediculouss.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rediculouss.mp3; sourceTree = "<group>"; };
+		C03B8BA41AA831BA00E07CE1 /* expecto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = expecto.mp3; sourceTree = "<group>"; };
 		C0709AE41AA766C300811214 /* Lumos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Lumos.mp3; sourceTree = "<group>"; };
 		C0979B341A9FF23E00C44BA5 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
 		C0979B361AA02CA800C44BA5 /* ViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
@@ -132,11 +132,11 @@
 			isa = PBXGroup;
 			children = (
 				81BA81491A49DA1800E65899 /* Info.plist */,
-				C039AA0A1AA7498E0060F5F1 /* water.mp3 */,
 				C039AA101AA74BD20060F5F1 /* 壁紙03.jpg */,
 				C0979B3A1AA02D4400C44BA5 /* 理科大マップ.jpg */,
 				C0979B3C1AA02D4E00C44BA5 /* 壁紙04.jpg */,
-				C0709AE21AA7659D00811214 /* rediculous.mp3 */,
+				C03B8BA41AA831BA00E07CE1 /* expecto.mp3 */,
+				C03B8BA21AA82E8700E07CE1 /* Rediculouss.mp3 */,
 				C0709AE41AA766C300811214 /* Lumos.mp3 */,
 				C0979B3E1AA0357000C44BA5 /* 壁紙01.jpg */,
 				81BA81821A49E27F00E65899 /* ParseStarterProject-Bridging-Header.h */,
@@ -231,11 +231,11 @@
 				81BA81501A49DA1800E65899 /* Main.storyboard in Resources */,
 				C0979B3D1AA02D4E00C44BA5 /* 壁紙04.jpg in Resources */,
 				C0709AE51AA766C300811214 /* Lumos.mp3 in Resources */,
-				C039AA0B1AA7498E0060F5F1 /* water.mp3 in Resources */,
-				C0709AE31AA7659D00811214 /* rediculous.mp3 in Resources */,
+				C03B8BA51AA831BA00E07CE1 /* expecto.mp3 in Resources */,
 				C039AA111AA74BD20060F5F1 /* 壁紙03.jpg in Resources */,
 				81BA81521A49DA1800E65899 /* Images.xcassets in Resources */,
 				C0979B3F1AA0357000C44BA5 /* 壁紙01.jpg in Resources */,
+				C03B8BA31AA82E8700E07CE1 /* Rediculouss.mp3 in Resources */,
 				C0979B3B1AA02D4400C44BA5 /* 理科大マップ.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
