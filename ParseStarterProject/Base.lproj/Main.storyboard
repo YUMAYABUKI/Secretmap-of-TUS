@@ -17,24 +17,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="壁紙03.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kRb-18-WeX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="壁紙Index.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lQG-zG-d77">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyL-f5-V06">
-                                <rect key="frame" x="136" y="310" width="48" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZO4-Z6-vdt">
+                                <rect key="frame" x="117" y="241" width="87" height="77"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <state key="normal" title="呪文">
-                                    <color key="titleColor" red="0.040712334221573498" green="0.095280511400380963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.04071233422" green="0.095280511400000004" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="curses" destination="iSs-il-xP1" eventType="touchUpInside" id="odi-Mr-GWZ"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="yFf-v4-bes"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qR7-Q2-R4B">
-                                <rect key="frame" x="89" y="255" width="142" height="30"/>
+                                <rect key="frame" x="49" y="380" width="76" height="57"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                <state key="normal" title="ホウキに乗る">
+                                <state key="normal">
                                     <color key="titleColor" red="0.040712334221573498" green="0.095280511400380963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -42,15 +42,15 @@
                                     <segue destination="r0k-2X-BxT" kind="presentation" id="U2O-4L-Exb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaq-7N-kgV">
-                                <rect key="frame" x="80" y="369" width="161" height="57"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyL-f5-V06">
+                                <rect key="frame" x="199" y="383" width="65" height="52"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.040712334221573498" green="0.095280511400380963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" id="d7D-0y-mpl"/>
+                                    <action selector="curses" destination="iSs-il-xP1" eventType="touchUpInside" id="odi-Mr-GWZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -496,15 +496,15 @@
     </scenes>
     <resources>
         <image name="壁紙01.jpg" width="658" height="1154"/>
-        <image name="壁紙03.jpg" width="658" height="1154"/>
         <image name="壁紙04.jpg" width="658" height="1154"/>
+        <image name="壁紙Index.jpg" width="658" height="1154"/>
         <image name="理科大マップ.jpg" width="658" height="1154"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="d7D-0y-mpl"/>
-        <segue reference="ipL-83-dnB"/>
-        <segue reference="Vrt-Xr-uZN"/>
-        <segue reference="kwX-jM-Qmd"/>
         <segue reference="k37-fc-pmr"/>
+        <segue reference="kwX-jM-Qmd"/>
+        <segue reference="Vrt-Xr-uZN"/>
+        <segue reference="yFf-v4-bes"/>
+        <segue reference="ipL-83-dnB"/>
     </inferredMetricsTieBreakers>
 </document>

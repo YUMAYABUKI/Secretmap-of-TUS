@@ -33,6 +33,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         // view に追加
         self.view.addSubview(self.mapView!)
+       
         
     }
     
