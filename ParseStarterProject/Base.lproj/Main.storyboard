@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyL-f5-V06">
-                                <rect key="frame" x="136" y="276" width="48" height="42"/>
+                                <rect key="frame" x="136" y="310" width="48" height="42"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <state key="normal" title="呪文">
                                     <color key="titleColor" red="0.040712334221573498" green="0.095280511400380963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -31,8 +31,19 @@
                                     <action selector="curses" destination="iSs-il-xP1" eventType="touchUpInside" id="odi-Mr-GWZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qR7-Q2-R4B">
+                                <rect key="frame" x="89" y="255" width="142" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="ホウキに乗る">
+                                    <color key="titleColor" red="0.040712334221573498" green="0.095280511400380963" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="r0k-2X-BxT" kind="presentation" id="U2O-4L-Exb"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaq-7N-kgV">
-                                <rect key="frame" x="80" y="136" width="161" height="57"/>
+                                <rect key="frame" x="80" y="369" width="161" height="57"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <state key="normal">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -50,6 +61,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8IL-0S-jod" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-625" y="-67"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="8pq-tg-7Z4">
+            <objects>
+                <viewController id="r0k-2X-BxT" customClass="MapViewController" customModule="ParseStarterProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ltv-mK-sW7"/>
+                        <viewControllerLayoutGuide type="bottom" id="FfO-cp-1XB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gMV-Yo-IXi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Yxd-b3-xXo">
+                                <rect key="frame" x="0.0" y="70" width="320" height="498"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7x5-XB-OG2">
+                                <rect key="frame" x="255" y="28" width="42" height="30"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iSs-il-xP1" kind="presentation" id="ipL-83-dnB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="mapView" destination="Yxd-b3-xXo" id="3Gy-A1-nIX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J5Y-XY-ofe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-373" y="-705"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -81,6 +129,16 @@
                                 <connections>
                                     <action selector="UserNameButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="HgJ-EW-vKF"/>
                                     <segue destination="b3C-h5-4oN" kind="presentation" id="Vrt-Xr-uZN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QtJ-SS-Gup">
+                                <rect key="frame" x="256" y="108" width="42" height="30"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iSs-il-xP1" kind="presentation" id="GLj-VD-axp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -443,9 +501,10 @@
         <image name="理科大マップ.jpg" width="658" height="1154"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="aov-8i-Tmp"/>
+        <segue reference="d7D-0y-mpl"/>
+        <segue reference="ipL-83-dnB"/>
+        <segue reference="Vrt-Xr-uZN"/>
         <segue reference="kwX-jM-Qmd"/>
         <segue reference="k37-fc-pmr"/>
-        <segue reference="d7D-0y-mpl"/>
     </inferredMetricsTieBreakers>
 </document>
